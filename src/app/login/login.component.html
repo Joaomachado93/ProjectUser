@@ -1,0 +1,32 @@
+ <div>
+<form [formGroup]="bioSection" (ngSubmit)="callingFunction()">
+  <h3>Login
+</h3>
+
+<label>
+  First Name:
+  <input type="Email" formControlName="firstName">
+</label> <br>
+<label>
+  Last Name:
+  <input type="password" formControlName="lastName">
+</label> <br>
+<button type="submit">Submit Application</button>
+</form>
+</div> 
+
+<!-- <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+
+ 
+    <input matInput formControlName="email" type="email"
+        placeholder="E-mail" autocomplete="email" readonly="false">
+
+    <input matInput formControlName="password" type="password"  
+      placeholder="Password" autocomplete="password">
+
+  <button mat-button color="primary" type="submit" [disabled]="!loginForm.valid">
+    <mat-icon>check</mat-icon>
+    Login
+  </button>
+</form> -->
+
